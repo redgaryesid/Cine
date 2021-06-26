@@ -1,0 +1,16 @@
+.body_login {display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+background-image: url('../../assets/Fondo.jpg');
+}
+.login_container{
+  background: #ffffffa3;
+  padding: 10% 47px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.full_width{
+  width: 100%;
+}
