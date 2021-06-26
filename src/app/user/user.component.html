@@ -1,0 +1,21 @@
+<div class="content-table">
+  <table class="table" *ngIf="peliculas.length>1">
+    <thead>
+      <tr>
+        <th scope="col">código</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcón</th>
+        <th scope="col">Horarios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let peli of peliculas">
+        <th scope="row">{{peli.code}}</th>
+        <td>{{peli.name}}</td>
+        <td>{{peli.description}}</td>
+        <td>{{peli.availability}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

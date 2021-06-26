@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isLoggin=this.getIsLoggin();
-  userActive = {};
+  //userActive = {};
 
 
   getIsLoggin(){
     var userData = localStorage.getItem("user_active");
     if(userData != null){
-      this.userActive = JSON.parse(userData);
+      //this.userActive = JSON.parse(userData);
       return true;
     }
     else{

@@ -33,6 +33,7 @@ export class LogginComponent implements OnInit {
   }
   loggin(){
     if(this.getUserData()){
+      console.log("this.userActiveData",this.userActiveData)
       localStorage.setItem("user_active",JSON.stringify(this.userActiveData));
       location.reload(true);
     }else{
@@ -46,6 +47,7 @@ export class LogginComponent implements OnInit {
     for (var i  = 0; i < this.users.length;i++){
       var currentUser = this.users[i];
       if(currentUser.username == username && currentUser.userpassword == userpassword){
+        this.userActiveData = currentUser;
         return true;
       }
     }

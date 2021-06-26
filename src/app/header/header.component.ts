@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
 
   }
   signOff(){
-    localStorage.clear();
+    //localStorage.clear();
+    localStorage.removeItem("user_active");
     location.reload(true);
   }
 

@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-
+  userActive  = this.getUserActive();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getUserActive(){
+    var user =  localStorage.getItem("user_active")
+    if(user != null)
+    return JSON.parse(user);
   }
 
 }
